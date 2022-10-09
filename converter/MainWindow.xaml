@@ -5,45 +5,304 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:converter"
         mc:Ignorable="d"
-        Title="Converter" Height="350" Width="750" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <TextBox x:Name="textBoxVeriable" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="304"/>
-        <TextBox x:Name="textBoxResult" HorizontalAlignment="Left" Height="22" Margin="79,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304"/>
-        <Label x:Name="labelVeriable" Content="Значение" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="label" Content="Результат" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Height="32"/>
-        <Button x:Name="buttonFC" Content="F=>C" HorizontalAlignment="Left" Margin="131,111,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="ButtonFC_Click"/>
-        <Button x:Name="buttonCF" Content="C=>F" HorizontalAlignment="Left" Margin="230,111,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="ButtonCF_Click"/>
-        <Button x:Name="buttonCK" Content="C=>K" HorizontalAlignment="Left" Margin="330,111,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="ButtonCK_Click"/>
-        <Button x:Name="buttonKF" Content="K=>F" HorizontalAlignment="Left" Margin="430,110,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="ButtonKF_Click"/>
-        <Button x:Name="buttonFK" Content="F=>K" HorizontalAlignment="Left" Margin="530,110,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="ButtonFK_Click"/>
-        <Button x:Name="buttonKC" Content="K=>C" HorizontalAlignment="Left" Margin="631,111,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="ButtonKC_Click"/>
-        <Label x:Name="labelTemputare" Content="Меры температуры" HorizontalAlignment="Left" Margin="8,110,0,0" VerticalAlignment="Top" Height="33"/>
-        <Label x:Name="labelWeight" Content="Меры массы" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Height="33"/>
-        <Button x:Name="buttonTonKg" Content="Т=>Кг" HorizontalAlignment="Left" Margin="131,157,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonTonKg_Click"/>
-        <Button x:Name="buttonTonGr" Content="Т=>Г" HorizontalAlignment="Left" Margin="230,157,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonTonGr_Click"/>
-        <Button x:Name="buttonTonCen" Content="Т=>Ц" HorizontalAlignment="Left" Margin="330,157,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonTonCen_Click"/>
-        <Button x:Name="buttonKgTon" Content="Кг=>Т" HorizontalAlignment="Left" Margin="430,157,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonKgTon_Click"/>
-        <Button x:Name="buttonKgGr" Content="Кг=>Гр" HorizontalAlignment="Left" Margin="530,157,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonKgGr_Click"/>
-        <Button x:Name="buttonKgCen" Content="Кг=>Ц" HorizontalAlignment="Left" Margin="631,157,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonKgCen_Click"/>
-        <Button x:Name="buttonCenTon" Content="Ц=>Т" HorizontalAlignment="Left" Margin="131,184,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonCenTon_Click"/>
-        <Button x:Name="buttonCenKg" Content="Ц=>Кг" HorizontalAlignment="Left" Margin="230,184,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonCenKg_Click"/>
-        <Button x:Name="buttonCenGr" Content="Ц=>Гр" HorizontalAlignment="Left" Margin="330,184,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonCenGr_Click"/>
-        <Button x:Name="buttonGrTon" Content="Гр=>Т" HorizontalAlignment="Left" Margin="430,184,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonGrTon_Click"/>
-        <Button x:Name="buttonGrKg" Content="Гр=>Кг" HorizontalAlignment="Left" Margin="530,184,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonGrKg_Click"/>
-        <Button x:Name="buttonGrCen" Content="Гр=>Ц" HorizontalAlignment="Left" Margin="631,184,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonGrCen_Click"/>
-        <Label x:Name="labelPower" Content="Меры мощности" HorizontalAlignment="Left" Margin="8,233,0,0" VerticalAlignment="Top" Height="33"/>
-        <Button x:Name="buttonWattkW" Content="Вт=>кВт" HorizontalAlignment="Left" Margin="131,224,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonWattkW_Click"/>
-        <Button x:Name="buttonWattmWt" Content="Вт=>мВт" HorizontalAlignment="Left" Margin="230,224,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonWattmWt_Click"/>
-        <Button x:Name="buttonWattHorsepower" Content="Вт=>л.с." HorizontalAlignment="Left" Margin="330,224,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonWattHorsepower_Click" />
-        <Button x:Name="buttonkWwatt" Content="кВт=>Вт" HorizontalAlignment="Left" Margin="430,224,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonkWwatt_Click" />
-        <Button x:Name="buttonkWmWt" Content="кВт=>мВт" HorizontalAlignment="Left" Margin="530,224,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonkWmWt_Click" />
-        <Button x:Name="buttonkWHorsepower" Content="кВт=>л.с." HorizontalAlignment="Left" Margin="631,224,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonkWHorsepower_Click"/>
-        <Button x:Name="buttonMWtWt" Content="мВт=>Вт" HorizontalAlignment="Left" Margin="131,251,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonMWtWt_Click"/>
-        <Button x:Name="buttonMWtkWt" Content="мВт=>кВт" HorizontalAlignment="Left" Margin="230,251,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonMWtkWt_Click"/>
-        <Button x:Name="buttonMWtHorsepower" Content="мВт=>л.с." HorizontalAlignment="Left" Margin="330,251,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonMWtHorsepower_Click"/>
-        <Button x:Name="buttonHorsepowerWt" Content="л.с.=>Вт" HorizontalAlignment="Left" Margin="430,251,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonHorsepowerWt_Click" />
-        <Button x:Name="buttonHorsepowerkWt" Content="л.с.=>kВт" HorizontalAlignment="Left" Margin="530,251,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonHorsepowerkWt_Click" />
-        <Button x:Name="buttonHorsepowermWt" Content="л.с.=>мВт" HorizontalAlignment="Left" Margin="631,251,0,0" VerticalAlignment="Top" Width="81" Height="22" Click="ButtonHorsepowermWt_Click"/>
+        Title="Конвертер величин" Height="350" Width="750" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="BackgroundBotton" TargetType="Button">
+            <Setter Property="ItemsControl.FontFamily" Value="Cambria"/>
+            <Setter Property="Width" Value="81"/>
+            <Setter Property="Height" Value="27"/>
+            <Setter Property="Background" Value="LightPink"/>
+        </Style>
+        
+        <Style x:Key="TextFont">
+            <Setter Property="ItemsControl.FontFamily" Value="Cambria"/>
+            
+        </Style>
 
+        <Style x:Key="TextBoxFont" TargetType="TextBox">
+            <Setter Property="ItemsControl.FontFamily" Value="Times New Roman"/>
+            <Setter Property="ItemsControl.FontSize" Value="14"/>
+            <Setter Property="Height" Value="23"/>
+            <Setter Property="Width" Value="304"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FC5C7D" Offset="0"/>
+                    <GradientStop Color="#6A82FB" Offset="0.9"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBox x:Name="textBoxVeriable" HorizontalAlignment="Left" TextAlignment="Center" Margin="79,10,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Style="{StaticResource TextBoxFont}">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox x:Name="textBoxResult" HorizontalAlignment="Left" TextAlignment="Center"  Margin="79,57,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Style="{StaticResource TextBoxFont}">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label x:Name="labelVeriable" Content="Значение" Style="{StaticResource TextFont}" HorizontalAlignment="Left" Margin="11,10,0,0" 
+               VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="label" Content="Результат" HorizontalAlignment="Left" Style="{StaticResource TextFont}" Margin="10,57,0,0" 
+               VerticalAlignment="Top" Height="32"/>
+        <Button x:Name="buttonFC" Content="F=>C" HorizontalAlignment="Left" Margin="131,111,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonFC_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonCF" Content="C=>F" HorizontalAlignment="Left" Margin="230,111,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonCF_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonCK" Content="C=>K" HorizontalAlignment="Left" Margin="330,111,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonCK_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonKF" Content="K=>F" HorizontalAlignment="Left" Margin="430,110,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonKF_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonFK" Content="F=>K" HorizontalAlignment="Left" Margin="530,110,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonFK_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonKC" Content="K=>C" HorizontalAlignment="Left" Margin="631,111,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonKC_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="labelTemputare" Content="Меры температуры" Style="{StaticResource TextFont}" HorizontalAlignment="Left" 
+               Margin="8,110,0,0" VerticalAlignment="Top" Height="33"/>
+        <Label x:Name="labelWeight" Content="Меры массы" HorizontalAlignment="Left" Style="{StaticResource TextFont}" Margin="10,166,0,0" 
+               VerticalAlignment="Top" 
+               Height="33"/>
+        <Button x:Name="buttonTonKg" Content="Т=>Кг" HorizontalAlignment="Left" Margin="131,157,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonTonKg_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonTonGr" Content="Т=>Г" HorizontalAlignment="Left" Margin="230,157,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonTonGr_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonTonCen" Content="Т=>Ц" HorizontalAlignment="Left" Margin="330,157,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonTonCen_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonKgTon" Content="Кг=>Т" HorizontalAlignment="Left" Margin="430,157,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonKgTon_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonKgGr" Content="Кг=>Гр" HorizontalAlignment="Left" Margin="530,157,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonKgGr_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonKgCen" Content="Кг=>Ц" HorizontalAlignment="Left" Margin="631,157,0,0" VerticalAlignment="Top" 
+               Style="{StaticResource BackgroundBotton}" Click="ButtonKgCen_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonCenTon" Content="Ц=>Т" HorizontalAlignment="Left" Margin="131,184,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonCenTon_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonCenKg" Content="Ц=>Кг" HorizontalAlignment="Left" Margin="230,184,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonCenKg_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonCenGr" Content="Ц=>Гр" HorizontalAlignment="Left" Margin="330,184,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonCenGr_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonGrTon" Content="Гр=>Т" HorizontalAlignment="Left" Margin="430,184,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonGrTon_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonGrKg" Content="Гр=>Кг" HorizontalAlignment="Left" Margin="530,184,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonGrKg_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonGrCen" Content="Гр=>Ц" HorizontalAlignment="Left" Margin="631,184,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonGrCen_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="labelPower" Content="Меры мощности" HorizontalAlignment="Left" Style="{StaticResource TextFont}" Margin="10,233,0,0" 
+               VerticalAlignment="Top" Height="45"/>
+        <Button x:Name="buttonWattkW" Content="Вт=>кВт" HorizontalAlignment="Left" Margin="131,224,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonWattkW_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonWattmWt" Content="Вт=>мВт" HorizontalAlignment="Left" Margin="230,224,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonWattmWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonWattHorsepower" Content="Вт=>л.с." HorizontalAlignment="Left" Margin="330,224,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonWattHorsepower_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonkWwatt" Content="кВт=>Вт" HorizontalAlignment="Left" Margin="430,224,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonkWwatt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonkWmWt" Content="кВт=>мВт" HorizontalAlignment="Left" Margin="530,224,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonkWmWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonkWHorsepower" Content="кВт=>л.с." HorizontalAlignment="Left" Margin="631,224,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonkWHorsepower_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonMWtWt" Content="мВт=>Вт" HorizontalAlignment="Left" Margin="131,251,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonMWtWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonMWtkWt" Content="мВт=>кВт" HorizontalAlignment="Left" Margin="230,251,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonMWtkWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonMWtHorsepower" Content="мВт=>л.с." HorizontalAlignment="Left" Margin="330,251,0,0" VerticalAlignment="Top"
+                Style="{StaticResource BackgroundBotton}" Click="ButtonMWtHorsepower_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonHorsepowerWt" Content="л.с.=>Вт" HorizontalAlignment="Left" Margin="430,251,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonHorsepowerWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonHorsepowerkWt" Content="л.с.=>kВт" HorizontalAlignment="Left" Margin="530,251,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonHorsepowerkWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="buttonHorsepowermWt" Content="л.с.=>мВт" HorizontalAlignment="Left" Margin="631,251,0,0" VerticalAlignment="Top" 
+                Style="{StaticResource BackgroundBotton}" Click="ButtonHorsepowermWt_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>
